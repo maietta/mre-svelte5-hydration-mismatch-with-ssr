@@ -7,8 +7,6 @@
 	// import LightDarkToggleSwitch from '$lib/components/LightDarkToggle.svelte';
 	import { enhance } from '$app/forms';
 
-	let { user, ...props } = $props();
-
 	let open = $state({
 		news: false,
 		solutions: false,
@@ -264,7 +262,8 @@
 		<div class="flex items-center space-x-8">
 			<a href="/contact">Contact</a>
 			<div class="flex items-center">
-				{#if user}
+                [login button]
+                <!-- {#if user}
 					<form action="/api/logout" method="POST" use:enhance>
 						<Button class="btn-primary">Logout</Button>
 					</form>
@@ -276,7 +275,7 @@
 					>
 						Login</a
 					>
-				{/if}
+				{/if} -->
 			</div>
 		</div>
 	</div>
