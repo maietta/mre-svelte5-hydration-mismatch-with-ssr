@@ -9,6 +9,8 @@
 	});
 
 	let scrollY = $state(0);
+
+    import { Button } from "$lib/components/ui/button/index.js"; // OFFENDING LINE.
 </script>
 
 <svelte:window bind:scrollY />
@@ -46,7 +48,7 @@
 		<nav
 			class="absolute left-1/2 transform -translate-x-1/2 text-xl items-center space-x-8 bg-white dark:bg-yellow-50"
 		>
-		
+		\
 
 			<a href="/insights">Insights</a>
 			<!-- <span class="text-neutral-300">&nbsp;|&nbsp;</span> -->
