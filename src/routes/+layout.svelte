@@ -1,4 +1,6 @@
-<script lang="ts">
+<script>
+	import '../app.css';
+
 	let { children } = $props();
 </script>
 
@@ -8,3 +10,4 @@
 <a href="/contact">Contact</a>
 
 {@render children()}
+<slot></slot>
